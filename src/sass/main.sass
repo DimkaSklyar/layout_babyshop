@@ -303,6 +303,110 @@ body
 
 .products-hot
 	padding-bottom: 50px
+
+.day-sale
+	
+	&__product
+		text-align: center
+
+		&_header
+			a
+				color: #1f3d70
+				font-size: 30px
+				font-weight: 900
+				&:hover
+					color: $accent-2
+		&_price
+			font-weight: 900
+			font-size: 21px
+			display: inline-block
+			margin-bottom: 25px
+			&:first-child
+				margin-right: 20px
+			&_old
+				color: #bfbfbf
+				text-decoration: line-through
+			&_new
+				color: $accent-2
+			
+		&__description
+			font-size: 15px
+			color: #9b9b9b
+
+#clockdiv
+	display: flex
+	justify-content: space-around
+	width: 80%
+	margin: 0 auto
+	margin-bottom: 30px
+	span
+		color: #1f3d70
+		font-size: 27px
+		font-weight: 900
+		line-height: 1
+	.time-wrap
+		display: flex
+		flex-direction: column
+	.smalltext
+		color: #bfbfbf
+		font-weight: 300
+
+
+.firm
+	background-color: #f4f4f4
+	padding-bottom: 0
+	&__wrap
+	
+	&__logo
+		opacity: .4
+		transition: .2s
+		img
+			width: 100%
+		&:hover
+			opacity: .8
+
+
+.subscribe
+	text-align: center
+	padding: 35px 0
+	.input-form
+		padding: 18px 0 18px 23px
+		font-weight: 900
+		font-family: 'Nunito', sans-serif
+		border: 3px solid #e0e0e0
+		border-radius: 3px
+		width: 450px
+		&::placeholder
+			color: #e0e0e0
+	.btn
+		padding: 20px 20px 20px
+		border-top-left-radius: 0
+		border-bottom-left-radius: 0
+		cursor: pointer
+		transition: .3s
+		margin-left: -5px
+	&-form
+		display: flex
+		justify-content: center
+
+.page-footer
+	.navigation
+		padding-bottom: 50px
+		&__link
+			font-weight: 300
+			color: #b2b2b2
+			&:hover
+				color: $accent-2
+
+.copyright
+	text-align: center
+	background-color: #f4f4f4
+	padding: 20px 0
+	p
+		font-size: 13px
+		color: #bfbfbf
+		margin-bottom: 0
+
 /*==========  user style  ==========*/
 
 @import "media" // Always at the end
