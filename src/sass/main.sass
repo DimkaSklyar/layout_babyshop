@@ -24,6 +24,18 @@ a
 	border: 1px solid $accent-2
 	border-radius: 30px 
 	font-weight: 900
+	&:hover
+		background-color: #fff
+		border-color: #fff
+
+	&_rect
+		border-radius: 5px
+		background-color: $accent-2
+		color: #fff
+		&:hover
+			background-color: #1f3d70
+			color: #fff
+			border-color: #1f3d70
 
 ul
 	margin: 0
@@ -131,16 +143,17 @@ body
 			top: 20%
 			
 			&_right
-				right: 5%
+				right: 10%
 				text-align: right
 			
 			&_left
-				left: 5%
+				left: 10%
 				text-align: left
 
 	&__header
 		font-size: 35px
 		color: #63a5d8
+		font-weight: 300
 		font-weight: 300
 
 	&__text
@@ -151,6 +164,145 @@ body
 		&.c-accent-2
 			color: $accent-2
 
+	.slick-next
+		right: 60px
+	.slick-prev
+		left: 35px
+		z-index: 1
+	.slick-next:before, .slick-prev:before
+		font-size: 52px
+		color: $accent-2
+
+.page-section
+	padding: 80px 0
+
+.about-us-section
+	&_img
+		img
+			width: 100%
+	
+	.title-section
+		font-family: 'Amazone', sans-sarif
+		font-size: 48px
+		text-align: center
+		color: #1f3d70
+
+	.description-about
+		color: #9b9b9b
+		font-weight: 300
+	.signature
+		text-align: right
+		font-family: 'Amazone', sans-sarif
+		font-size: 22px
+		color: $accent-2
+
+.product__item
+	position: relative
+	margin: 0 15px
+
+	&_img
+		img
+			width: 100%
+	&:hover .product__item_show
+			opacity: 1
+	
+	&_show 
+		position: absolute
+		bottom: 20px
+		left: 50%
+		transform: translateX(-50%)
+		opacity: 0
+		transition: .3s
+		a
+			display: inline-block
+			width: 55px
+			height: 55px
+			border-radius: 50%
+			background-color: #ffffff
+			line-height: 55px
+			text-align: center
+			color: #000
+			font-size: 22px
+			box-shadow: 0 15px 25px rgba(0, 0, 0, 0.18)
+			&:hover
+				background-color: #1f3d70
+				color: #fff
+
+.section-product
+	background-color: #f4f4f4
+	padding: 100px 0 0
+
+.product-carousel
+	padding: 50px 0
+	.slick-next
+
+	.slick-prev
+		left: -50px
+		z-index: 1
+	.slick-next:before, .slick-prev:before
+		font-size: 52px
+		color: $accent-2
+
+.img-fluid
+	width: 100%
+	height: auto
+
+.section-header
+	text-align: center
+	.section-title
+		font-weight: 900
+		font-size: 30px
+		color: #1f3d70
+		line-height: 1
+		padding-bottom: 0
+		margin-bottom: 5px
+	.section-decor
+		padding-bottom: 10px
+		img
+			height: 100%
+	.section-description
+		font-size: 15px
+		color: #9b9b9b
+
+.sale
+
+	&__title
+		font-family: 'Amazone', sans-sarif
+		font-size: 42px
+		color: #1f3d70
+	&__description
+		color: #9b9b9b
+		font-weight: 300
+
+	&_img
+		img
+			width: 100%
+
+.hot-product
+	
+	.product__item
+		margin: 0
+		margin-bottom: 30px
+
+	.nav-products
+		text-align: center
+		margin-bottom: 30px
+		&__item
+			background-color: transparent
+			font-weight: 900
+			font-size: 20px
+			font-family: 'Nunito', sans-serif
+			border: none
+			outline: none 0
+			cursor: pointer
+			color: #1f3d70
+			&:hover
+				color: $accent-2
+			&:not(:last-child)
+				margin-right: 35px
+
+.products-hot
+	padding-bottom: 50px
 /*==========  user style  ==========*/
 
 @import "media" // Always at the end
