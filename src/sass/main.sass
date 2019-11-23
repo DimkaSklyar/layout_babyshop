@@ -15,6 +15,16 @@ a
 	&:active
 		outline: none 0
 
+.btn
+	display: inline-block
+	padding: 10px 20px
+	background-color: transparent
+	color: $accent-2
+	outline: none 0
+	border: 1px solid $accent-2
+	border-radius: 30px 
+	font-weight: 900
+
 ul
 	margin: 0
 	padding: 0
@@ -109,11 +119,38 @@ body
 	&-container
 
 	&__item
+		position: relative
 		&_img
 			position: relative
 			img
 				width: 100%
 				display: block
+		
+		&__content
+			position: absolute
+			top: 20%
+			
+			&_right
+				right: 5%
+				text-align: right
+			
+			&_left
+				left: 5%
+				text-align: left
+
+	&__header
+		font-size: 35px
+		color: #63a5d8
+		font-weight: 300
+
+	&__text
+		font-family: 'Amazone', sans-sarif
+		font-size: 80px
+		color: #63a5d8
+		line-height: 1.2
+		&.c-accent-2
+			color: $accent-2
+
 /*==========  user style  ==========*/
 
 @import "media" // Always at the end

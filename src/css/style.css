@@ -24,6 +24,14 @@
   src: url("../fonts/FontAwesome/fontawesome-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/FontAwesome/fontawesome-webfont.woff") format("woff"), url("../fonts/FontAwesome/fontawesome-webfont.ttf") format("truetype");
 }
 
+@font-face {
+  font-family: "Amazone";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/Amazone/Amazone.eot");
+  src: url("../fonts/Amazone/Amazone.eot?#iefix") format("embedded-opentype"), url("../fonts/Amazone/Amazone.woff") format("woff"), url("../fonts/Amazone/Amazone.ttf") format("truetype");
+}
+
 /*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
 html {
   font-family: sans-serif;
@@ -7952,6 +7960,17 @@ a:active {
   outline: none 0;
 }
 
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: transparent;
+  color: #fc1550;
+  outline: none 0;
+  border: 1px solid #fc1550;
+  border-radius: 30px;
+  font-weight: 900;
+}
+
 ul {
   margin: 0;
   padding: 0;
@@ -8064,6 +8083,10 @@ body {
   color: #fc1550;
 }
 
+.slider__item {
+  position: relative;
+}
+
 .slider__item_img {
   position: relative;
 }
@@ -8071,6 +8094,38 @@ body {
 .slider__item_img img {
   width: 100%;
   display: block;
+}
+
+.slider__item__content {
+  position: absolute;
+  top: 20%;
+}
+
+.slider__item__content_right {
+  right: 5%;
+  text-align: right;
+}
+
+.slider__item__content_left {
+  left: 5%;
+  text-align: left;
+}
+
+.slider__header {
+  font-size: 35px;
+  color: #63a5d8;
+  font-weight: 300;
+}
+
+.slider__text {
+  font-family: 'Amazone', sans-sarif;
+  font-size: 80px;
+  color: #63a5d8;
+  line-height: 1.2;
+}
+
+.slider__text.c-accent-2 {
+  color: #fc1550;
 }
 
 /*==========  user style  ==========*/
