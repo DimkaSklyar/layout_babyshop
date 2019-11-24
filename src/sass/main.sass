@@ -201,10 +201,11 @@ body
 	margin: 0 15px
 
 	&_img
+		position: relative
 		img
 			width: 100%
-	&:hover .product__item_show
-			opacity: 1
+		&:hover .product__item_show
+				opacity: 1
 	
 	&_show 
 		position: absolute
@@ -407,6 +408,24 @@ body
 		color: #bfbfbf
 		margin-bottom: 0
 
+.product__title
+	text-align: center
+	color: #1f3d70
+	line-height: 1
+	margin-top: 20px
+	font-weight: 900
+	font-size: 19px
+	transition: .3s
+	&:hover
+		color: $accent-2
+.product__price
+	color: #b2b2b2
+	font-weight: 300
+	text-align: center
+	display: block
+
+.mixitup-control-active
+	color: $accent-2 !important
 /*==========  user style  ==========*/
 
 @import "media" // Always at the end

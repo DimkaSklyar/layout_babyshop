@@ -8192,11 +8192,15 @@ body {
   margin: 0 15px;
 }
 
+.product__item_img {
+  position: relative;
+}
+
 .product__item_img img {
   width: 100%;
 }
 
-.product__item:hover .product__item_show {
+.product__item_img:hover .product__item_show {
   opacity: 1;
 }
 
@@ -8462,6 +8466,31 @@ body {
   font-size: 13px;
   color: #bfbfbf;
   margin-bottom: 0;
+}
+
+.product__title {
+  text-align: center;
+  color: #1f3d70;
+  line-height: 1;
+  margin-top: 20px;
+  font-weight: 900;
+  font-size: 19px;
+  transition: .3s;
+}
+
+.product__title:hover {
+  color: #fc1550;
+}
+
+.product__price {
+  color: #b2b2b2;
+  font-weight: 300;
+  text-align: center;
+  display: block;
+}
+
+.mixitup-control-active {
+  color: #fc1550 !important;
 }
 
 /*==========  user style  ==========*/
