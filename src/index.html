@@ -8,15 +8,15 @@
 	<link href="https://fonts.googleapis.com/css?family=Nunito:300,400,700,900&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.min.css">
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-	<title>Будни малышей</title>
+	<title>Будни малышей - Главная</title>
 </head>
 
 <body>
 
 	<header class="page-header">
 		<div class="container">
-			<div class="row">
-				<div class="col-3">
+			<div class="row align-items-lg-center">
+				<div class="col-xl-3 col-4 d-sm-block d-none">
 					<div class="social">
 						<ul class="social__list list_line">
 							<li class="social__item"><a href="#" class="social__link"><i class="fa fa-vk" aria-hidden="true"></i></a>
@@ -25,32 +25,41 @@
 										aria-hidden="true"></i></a></li>
 							<li class="social__item"><a href="#" class="social__link"><i class="fa fa-facebook"
 										aria-hidden="true"></i></a></li>
-							<li class="social__item"><a href="#" class="social__link"><i class="fa fa-twitter"
+							<li class="social__item d-md-block d-none"><a href="#" class="social__link"><i class="fa fa-twitter"
 										aria-hidden="true"></i></a></li>
 						</ul>
 					</div>
 				</div>
-				<div class="col-6">
+				<div class="col-xl-6 col-4">
 					<div class="top-nav">
 						<div class="logo">
 							<a href="#">Будни <br>
 								Малышей</a>
 						</div>
-						<nav>
-							<ul class="navigation d-flex justify-content-center">
-								<li class="navigation__item"><a href="#" class="navigation__link">Главная</a></li>
-								<li class="navigation__item"><a href="#" class="navigation__link">Каталог</a></li>
-								<li class="navigation__item"><a href="#" class="navigation__link">О нас</a></li>
-								<li class="navigation__item"><a href="#" class="navigation__link">Доставка и оплата</a>
-								</li>
-								<li class="navigation__item"><a href="#" class="navigation__link">Контакты</a></li>
-							</ul>
+						<nav class="navigation__wrapper">
+							<h2 class="header-menu d-xl-none d-block">Меню</h1>
+								<ul class="navigation d-flex justify-content-center top-navigation">
+									<li class="navigation__item top-navigation__item"><a href="#"
+											class="navigation__link top-navigation__link">Главная</a></li>
+									<li class="navigation__item top-navigation__item"><a href="#"
+											class="navigation__link top-navigation__link">Каталог</a></li>
+									<li class="navigation__item top-navigation__item"><a href="#"
+											class="navigation__link top-navigation__link">О нас</a></li>
+									<li class="navigation__item top-navigation__item"><a href="#"
+											class="navigation__link top-navigation__link">Доставка и оплата</a>
+									</li>
+									<li class="navigation__item top-navigation__item"><a href="#"
+											class="navigation__link top-navigation__link">Контакты</a></li>
+								</ul>
 						</nav>
+						<div class="background_shadow"></div>
 					</div>
 				</div>
-				<div class="col-2 offset-1">
+				<div class="col-xl-2 offset-xl-1 col-sm-4 col-8 d-xl-block d-flex align-items-center">
+					<div class="d-xl-none d-block ml-auto"><button class="mobile-menu__button"><i class="fa fa-bars"
+								aria-hidden="true"></i></button></div>
 					<div class="top-contacts">
-						<ul>
+						<ul class="d-flex d-lg-block">
 							<li><a href="tel:+71111234567"><i class="fa fa-phone" aria-hidden="true"></i> +7 (111)
 									123-45-67</a></li>
 							<li><a href="email:info@mail.ru"><i class="fa fa-envelope-o" aria-hidden="true"></i>
@@ -91,12 +100,12 @@
 		<section class="page-section about-us-section">
 			<div class="container">
 				<div class="row align-items-center">
-					<div class="col-4 offset-1">
+					<div class="col-xl-4 offset-xl-1 col-md-4 offset-0 col-12">
 						<div class="about-us-section_img">
 							<img src="img/about-h3.jpg" alt="">
 						</div>
 					</div>
-					<div class="col-7">
+					<div class="col-xl-7 col-md-8 col-12">
 						<div class="about-us__wrapper">
 							<h2 class="title-section">О нас</h2>
 							<p class="description-about">Магазин «Будни малышей» является мультиформатным оператором
@@ -239,7 +248,7 @@
 		<section class="page-section sale">
 			<div class="container">
 				<div class="row align-items-center">
-					<div class="col-6">
+					<div class="col-md-6 col-12">
 						<div class="sale__wrap">
 							<h2 class="sale__title">Постояные скидки</h2>
 							<p class="sale__description mb-4">Наш магазин всегда старается дать клиенту самое лучше, по
@@ -250,7 +259,7 @@
 							<a href="#" class="btn btn_rect">Подробнее</a>
 						</div>
 					</div>
-					<div class="col-6">
+					<div class="col-md-6 col-12">
 						<div class="sale_img">
 							<img src="img/background-shop-h3.png" alt="">
 						</div>
@@ -273,7 +282,7 @@
 					<button class="nav-products__item" type="button" data-filter=".mix-trend">В тренде</button>
 				</div>
 				<div class="row products-hot">
-					<div class="product__item col-3 mix mix-hit mix-sale">
+					<div class="product__item col-lg-3 col-6 mix mix-hit mix-sale">
 						<div class="product__item_img">
 							<a href="#">
 								<img src="img/products/product-1.png" alt="">
@@ -294,7 +303,7 @@
 						</a>
 						<span class="product__price">1499 руб.</span>
 					</div>
-					<div class="product__item col-3 mix mix-sale mix-hit">
+					<div class="product__item col-lg-3 col-6 mix mix-sale mix-hit">
 						<div class="product__item_img">
 							<a href="#">
 								<img src="img/products/product-2.png" alt="">
@@ -315,7 +324,7 @@
 						</a>
 						<span class="product__price">499 руб.</span>
 					</div>
-					<div class="product__item col-3 mix mix-sale mix-trend">
+					<div class="product__item col-lg-3 col-6 mix mix-sale mix-trend">
 						<div class="product__item_img">
 							<a href="#">
 								<img src="img/products/product-3.png" alt="">
@@ -337,7 +346,7 @@
 						</a>
 						<span class="product__price">1899 руб.</span>
 					</div>
-					<div class="product__item col-3 mix mix-trend">
+					<div class="product__item col-lg-3 col-6 mix mix-trend">
 						<div class="product__item_img">
 							<a href="#">
 								<img src="img/products/product-4.png" alt="">
@@ -358,7 +367,7 @@
 						</a>
 						<span class="product__price">399 руб.</span>
 					</div>
-					<div class="product__item col-3 mix mix-hit mix-trend">
+					<div class="product__item col-lg-3 col-6 mix mix-hit mix-trend">
 						<div class="product__item_img">
 							<a href="#">
 								<img src="img/products/product-5.jpg" alt="">
@@ -379,7 +388,7 @@
 						</a>
 						<span class="product__price">899 руб.</span>
 					</div>
-					<div class="product__item col-3 mix mix-sale">
+					<div class="product__item col-lg-3 col-6 mix mix-sale">
 						<div class="product__item_img">
 							<a href="#">
 								<img src="img/products/product-6.jpg" alt="">
@@ -400,7 +409,7 @@
 						</a>
 						<span class="product__price">999 руб.</span>
 					</div>
-					<div class="product__item col-3 mix mix-trend">
+					<div class="product__item col-lg-3 col-6 mix mix-trend">
 						<div class="product__item_img">
 							<a href="#">
 								<img src="img/products/product-7.jpg" alt="">
@@ -421,7 +430,7 @@
 						</a>
 						<span class="product__price">3499 руб.</span>
 					</div>
-					<div class="product__item col-3 mix mix-hit mix-sale">
+					<div class="product__item col-lg-3 col-6 mix mix-hit mix-sale">
 						<div class="product__item_img">
 							<a href="#">
 								<img src="img/products/product-8.jpg" alt="">
@@ -452,12 +461,12 @@
 		<div class="section page-section day-sale">
 			<div class="container">
 				<div class="row align-items-center">
-					<div class="col-6">
+					<div class="col-lg-6 col-12">
 						<div class="day-sale_img">
 							<img src="img/day-sale.png" alt="">
 						</div>
 					</div>
-					<div class="col-5 offset-1">
+					<div class="col-lg-5 offset-lg-1 col-12">
 						<div class="day-sale__product">
 							<h2 class="day-sale__product_header"><a href="#">Косюм Принцесса</a> </h2>
 							<div class="day-sale__product_price__wrap"><span
@@ -494,32 +503,32 @@
 		<section class="page-section firm">
 			<div class="container">
 				<div class="row align-items-center pb-4">
-					<div class="col">
+					<div class="col-lg-2 col-4">
 						<div class="firm__wrap">
 							<div class="firm__logo"><img src="img/brands/disney.png" alt=""></div>
 						</div>
 					</div>
-					<div class="col">
+					<div class="col-lg-2 col-4">
 						<div class="firm__wrap">
 							<div class="firm__logo"><img src="img/brands/huggies_logo.png" alt=""></div>
 						</div>
 					</div>
-					<div class="col">
+					<div class="col-lg-2 col-4">
 						<div class="firm__wrap">
 							<div class="firm__logo"><img src="img/brands/lego.png" alt=""></div>
 						</div>
 					</div>
-					<div class="col">
+					<div class="col-lg-2 col-4">
 						<div class="firm__wrap">
 							<div class="firm__logo"><img src="img/brands/monster.png" alt=""></div>
 						</div>
 					</div>
-					<div class="col">
+					<div class="col-lg-2 col-4">
 						<div class="firm__wrap">
 							<div class="firm__logo"><img src="img/brands/nerf.png" alt=""></div>
 						</div>
 					</div>
-					<div class="col">
+					<div class="col-lg-2 col-4">
 						<div class="firm__wrap">
 							<div class="firm__logo"><img src="img/brands/winxpng.png" alt=""></div>
 						</div>
@@ -542,7 +551,7 @@
 					</div>
 					<div class="subscribe">
 						<form action="" class="subscribe-form">
-							<input type="text" name="email" id="email" class="input-form" placeholder="your@mail.ru">
+							<input type="text" name="email" id="email" class="input-form" placeholder="Ваш@mail.ru">
 							<button type="submit" class="btn btn_rect">Подписаться</button>
 						</form>
 					</div>
@@ -560,7 +569,7 @@
 			</div>
 		</div>
 		<div class="copyright">
-			<p>©2019 Будни малышей. Все права защищены.</p>
+			<p>©2020 Будни малышей. Все права защищены.</p>
 		</div>
 	</footer>
 

@@ -8001,11 +8001,24 @@ ul {
 body {
   font-family: 'Nunito', sans-serif;
   overflow-x: hidden;
+  min-width: 500px;
 }
 
 .page-header {
   padding: 40px 0;
   background-color: #f9f9f9;
+}
+
+@media (max-width: 991px) {
+  .page-header {
+    padding: 20px 0 40px;
+  }
+}
+
+@media (max-width: 575px) {
+  .page-header {
+    padding: 10px 0;
+  }
 }
 
 .social__item {
@@ -8057,6 +8070,12 @@ body {
   text-align: center;
 }
 
+@media (max-width: 575px) {
+  .logo {
+    text-align: left;
+  }
+}
+
 .logo a {
   display: inline-block;
   font-family: 'Nunito', sans-serif;
@@ -8066,8 +8085,65 @@ body {
   font-size: 28px;
 }
 
+@media (max-width: 575px) {
+  .logo a {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .top-navigation {
+    flex-direction: column;
+    padding-top: 0;
+  }
+}
+
+@media (max-width: 1199px) {
+  .top-navigation__item {
+    padding: 12px 0 10px 15px;
+    border-bottom: 1px solid #e6e6e6;
+  }
+}
+
+.top-navigation__item:not(:last-child) {
+  margin-right: 20px;
+}
+
+@media (max-width: 1199px) {
+  .top-navigation__item:not(:last-child) {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 1199px) {
+  .top-navigation__link {
+    text-transform: uppercase;
+    font-weight: 900;
+    color: #1f3d70;
+    font-size: 14px;
+  }
+}
+
 .navigation {
   padding: 10px 0;
+}
+
+@media (max-width: 1199px) {
+  .navigation__wrapper {
+    position: fixed;
+    z-index: 999;
+    height: 100%;
+    background-color: #fff;
+    top: 0;
+    left: -100%;
+    max-width: 440px;
+    width: 440px;
+    transition: .4s;
+  }
+}
+
+.navigation__wrapper.active {
+  left: 0;
 }
 
 .navigation__item:not(:last-child) {
@@ -8090,14 +8166,45 @@ body {
   font-weight: 600;
 }
 
+@media (max-width: 991px) {
+  .top-contacts a {
+    font-size: 0;
+  }
+}
+
 .top-contacts a .fa {
   margin-right: 10px;
   color: #fc1550;
   font-size: 16px;
 }
 
+@media (max-width: 991px) {
+  .top-contacts a .fa {
+    font-size: 36px;
+    color: #1f3d70;
+  }
+}
+
+@media (max-width: 575px) {
+  .top-contacts a .fa {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 575px) {
+  .top-contacts a .fa-envelope-o {
+    margin-right: 0;
+  }
+}
+
 .top-contacts a:hover {
   color: #fc1550;
+}
+
+@media (max-width: 1199px) {
+  .top-contacts li {
+    line-height: 1;
+  }
 }
 
 .slider__item {
@@ -8135,11 +8242,53 @@ body {
   font-weight: 300;
 }
 
+@media (max-width: 1199px) {
+  .slider__header {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 767px) {
+  .slider__header {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 575px) {
+  .slider__header {
+    font-size: 20px;
+  }
+}
+
 .slider__text {
   font-family: 'Amazone', sans-sarif;
   font-size: 80px;
   color: #63a5d8;
   line-height: 1.2;
+}
+
+@media (max-width: 1199px) {
+  .slider__text {
+    font-size: 54px;
+  }
+}
+
+@media (max-width: 991px) {
+  .slider__text {
+    font-size: 42px;
+  }
+}
+
+@media (max-width: 767px) {
+  .slider__text {
+    font-size: 34px;
+  }
+}
+
+@media (max-width: 575px) {
+  .slider__text {
+    font-size: 29px;
+  }
 }
 
 .slider__text.c-accent-2 {
@@ -8150,9 +8299,21 @@ body {
   right: 60px;
 }
 
+@media (max-width: 767px) {
+  .slider .slick-next {
+    right: 20px;
+  }
+}
+
 .slider .slick-prev {
   left: 35px;
   z-index: 1;
+}
+
+@media (max-width: 767px) {
+  .slider .slick-prev {
+    left: 10px;
+  }
 }
 
 .slider .slick-next:before, .slider .slick-prev:before {
@@ -8160,12 +8321,43 @@ body {
   color: #fc1550;
 }
 
+@media (max-width: 1199px) {
+  .slider .slick-next:before, .slider .slick-prev:before {
+    font-size: 35px;
+  }
+}
+
+@media (max-width: 991px) {
+  .slider .slick-next:before, .slider .slick-prev:before {
+    font-size: 24px;
+  }
+}
+
 .page-section {
   padding: 80px 0;
 }
 
+@media (max-width: 1199px) {
+  .page-section {
+    padding: 40px 0 80px;
+  }
+}
+
+@media (max-width: 767px) {
+  .about-us-section_img {
+    text-align: center;
+  }
+}
+
 .about-us-section_img img {
   width: 100%;
+}
+
+@media (max-width: 767px) {
+  .about-us-section_img img {
+    height: 300px;
+    width: auto;
+  }
 }
 
 .about-us-section .title-section {
@@ -8281,6 +8473,12 @@ body {
   color: #9b9b9b;
 }
 
+@media (max-width: 767px) {
+  .sale__wrap {
+    margin-bottom: 30px;
+  }
+}
+
 .sale__title {
   font-family: 'Amazone', sans-sarif;
   font-size: 42px;
@@ -8327,6 +8525,18 @@ body {
 
 .products-hot {
   padding-bottom: 50px;
+}
+
+@media (max-width: 991px) {
+  .day-sale_img {
+    text-align: center;
+  }
+}
+
+@media (max-width: 575px) {
+  .day-sale_img img {
+    width: 400px;
+  }
 }
 
 .day-sale__product {
@@ -8401,6 +8611,12 @@ body {
 .firm__logo {
   opacity: .4;
   transition: .2s;
+}
+
+@media (max-width: 991px) {
+  .firm__logo {
+    padding: 20px;
+  }
 }
 
 .firm__logo img {
@@ -8491,6 +8707,81 @@ body {
 
 .mixitup-control-active {
   color: #fc1550 !important;
+}
+
+.mobile-menu__button {
+  background: none;
+  outline: none 0;
+  border: none;
+  color: #1f3d70;
+  font-size: 36px;
+  margin-right: 20px;
+  line-height: 1.1;
+  width: 40px;
+  height: 40px;
+}
+
+@media (max-width: 991px) {
+  .mobile-menu__button {
+    margin-right: 10px;
+  }
+}
+
+@media (max-width: 575px) {
+  .mobile-menu__button {
+    font-size: 28px;
+  }
+}
+
+.mobile-menu__button:focus {
+  outline: none 0;
+}
+
+.header-menu {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 20px;
+  border-bottom: 1px solid #e6e6e6;
+  color: #1f3d70;
+  font-weight: 900;
+  background-color: #edefe8;
+  padding: 12px 0 10px 5px;
+  margin-bottom: 0;
+}
+
+.background_shadow {
+  height: 100%;
+  width: 100%;
+  top: 0;
+  z-index: 5;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  position: fixed;
+  overflow: auto;
+  opacity: 0;
+  visibility: hidden;
+  background-color: rgba(0, 0, 0, 0.7);
+  transition: 0.5s;
+}
+
+.background_shadow.active {
+  visibility: visible;
+  opacity: 1;
+  z-index: 99;
+}
+
+@media (max-width: 1199px) {
+  .slick-dots li button:before {
+    font-size: 20px;
+    color: #fc1550;
+  }
+}
+
+@media (max-width: 1199px) {
+  .slick-dots li.slick-active button:before {
+    color: #fc1550;
+  }
 }
 
 /*==========  user style  ==========*/
