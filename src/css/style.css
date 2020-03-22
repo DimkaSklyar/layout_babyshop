@@ -8972,6 +8972,52 @@ body {
   padding: 100px 0;
 }
 
+.about-us {
+  padding: 100px 0;
+}
+
+.about-us h2 {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 900;
+  color: #fc1550;
+  font-size: 18px;
+}
+
+.about-us .opening-speech {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 900;
+  color: #1f3d70;
+  font-size: 32px;
+  line-height: 1.2;
+}
+
+.about-us .underline-decor {
+  position: relative;
+}
+
+.about-us .underline-decor:before {
+  content: '';
+  z-index: -1;
+  width: 104%;
+  height: 50%;
+  background: #fc799a;
+  position: absolute;
+  bottom: 0;
+  left: -2%;
+}
+
+.about-us__description {
+  font-size: 14px;
+  color: #949494;
+  margin-bottom: 20px;
+  line-height: 25px;
+  width: 88%;
+}
+
+.content-right {
+  width: 64%;
+}
+
 /*==========  user style  ==========*/
 #small-dialog {
   background: white;

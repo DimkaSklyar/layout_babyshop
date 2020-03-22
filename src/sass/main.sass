@@ -692,6 +692,43 @@ body
 
 .map
 	padding: 100px 0
+
+
+//about-page
+
+.about-us
+	padding: 100px 0
+	h2
+		font-family: 'Nunito', sans-serif
+		font-weight: 900
+		color: $accent-2
+		font-size: 18px
+	.opening-speech
+		font-family: 'Nunito', sans-serif
+		font-weight: 900
+		color: #1f3d70
+		font-size: 32px
+		line-height: 1.2
+	.underline-decor
+		position: relative
+		&:before
+			content: ''
+			z-index: -1
+			width: 104%
+			height: 50%
+			background: #fc799a
+			position: absolute
+			bottom: 0
+			left: -2%
+	&__description
+		font-size: 14px
+		color: #949494
+		margin-bottom: 20px
+		line-height: 25px
+		width: 88%
+
+.content-right
+	width: 64%
 /*==========  user style  ==========*/
 @import "main.scss"
 @import "media" // Always at the end
