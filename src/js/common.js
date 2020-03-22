@@ -1,4 +1,52 @@
+
+$("a[href='#small-dialog']").click(function () {
+  $("#price").text($(this).closest(".product__item").find(".product__price").text());
+  $("#product-img").attr("src", $(this).closest(".product__item").find("img").attr("src"));
+  $("#product-name").text($(this).closest(".product__item").find(".product__title").text());
+  $("#description").html($(this).closest(".product__item").find(".product__item_description").html())
+  $("#inputCar").val($("#product-name").text());
+});
+
+
 $(document).ready(function () {
+
+  $('.popup-with-form').magnificPopup({
+		type: 'inline',
+		preloader: false,
+		focus: '#name',
+
+		// When elemened is focused, some mobile browsers in some cases zoom in
+		// It looks not nice, so we disable it:
+		callbacks: {
+			beforeOpen: function() {
+				if($(window).width() < 700) {
+					this.st.focus = false;
+				} else {
+					this.st.focus = '#name';
+				}
+			}
+		}
+	});
+
+
+	$('.popup-with-move-anim').magnificPopup({
+		type: 'inline',
+
+		fixedContentPos: false,
+		fixedBgPos: true,
+
+		overflowY: 'auto',
+
+		closeBtnInside: true,
+		preloader: false,
+		
+		midClick: true,
+		removalDelay: 300,
+		mainClass: 'my-mfp-slide-bottom'
+	});
+
+
+
   $(".mobile-menu__button").click(function (e) { 
     e.preventDefault();
     $(".navigation__wrapper").toggleClass("active");

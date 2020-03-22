@@ -1,6 +1,5 @@
 @import "vars"
 @import "fonts"
-@import "main.scss"
 @import "libs"
 
 /*==========  user style  ==========*/
@@ -48,7 +47,7 @@ ul
 body
 	font-family: 'Nunito', sans-serif
 	overflow-x: hidden
-	min-width: 500px
+	min-width: 520px
 
 .page-header
 	padding: 40px 0
@@ -570,6 +569,60 @@ body
 .slick-dots li.slick-active button:before
 	+media-breakpoint-down(lg)
 		color: #fc1550
-/*==========  user style  ==========*/
 
+
+
+#small-dialog
+	padding-bottom: 40px
+	min-width: 750px
+	z-index: 99
+	position: relative
+	+media-breakpoint-down(md)
+		min-width: 450px
+	.small-dialog__img
+		overflow: hidden
+		display: flex
+		justify-content: center
+		align-items: center
+		flex-grow: 1
+		height: 100%
+		img
+			object-fit: contain
+			width: 100%
+			height: 100%
+	h2
+		text-transform: uppercase
+		font-weight: 600
+	.price
+		font-weight: bold
+		font-size: 1.1em
+		color: #000
+		&+.fa
+			color: #000
+	button
+		cursor: pointer
+#retalForm
+	margin-top: 20px
+	input
+		width: 100%
+		padding: 15px 10px
+		font-family: 'Montserrat Alternates', sans-serif
+		color: #333
+		border: 2px solid 
+		outline: none 0
+		margin-bottom: 15px
+		font-weight: 900
+		font-family: Nunito,sans-serif
+		border: 3px solid #e0e0e0
+		border-radius: 3px
+		font-size: 14px
+#submitButton
+  width: 100%
+.contacts-page
+  padding: 0 0 60px
+  .map
+    margin-top: 40px
+
+/*==========  user style  ==========*/
+@import "main.scss"
 @import "media" // Always at the end
