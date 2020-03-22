@@ -1,3 +1,44 @@
+function AjaxFormRequest(result_id, formMain, url) {
+  jQuery.ajax({
+    url: url,
+    type: "POST",
+    dataType: "html",
+    data: jQuery("#" + formMain).serialize(),
+    success: function (response) {
+      $(':input', '#' + formMain)
+        .not(':button, :submit, :reset, :hidden')
+        .val('')
+        .removeAttr('checked')
+        .removeAttr('selected');
+      setTimeout(() => {
+        $("#message").hide();
+      }, 5000);
+    },
+    error: function (response) {
+      var par = document.getElementById(result_id);
+      var error = document.createElement('p');
+      error.classList.add("mt-3");
+      error.innerHTML = "Возникла ошибка при отправке формы.";
+      par.appendChild(error);
+      setTimeout(func, 700);
+    }
+  });
+}
+
+function func() {
+  $("p.mt-3").detach();
+}
+$('#subscribe-form').submit(function (e) {
+  e.preventDefault();
+  AjaxFormRequest('messegeResult-subscribe', 'subscribe-form', '../subscribe.php');
+});
+
+$('#retalForm').submit(function (e) {
+  e.preventDefault();
+  AjaxFormRequest('messegeResult-order', 'retalForm', '../order.php');
+});
+
+
 
 $("a[href='#small-dialog']").click(function () {
   $("#price").text($(this).closest(".product__item").find(".product__price").text());
@@ -25,6 +66,50 @@ $(document).ready(function () {
 					this.st.focus = '#name';
 				}
 			}
+		}
+  });
+  
+  $('.popup-youtube, .popup-vimeo, .popup-gmaps').magnificPopup({
+		disableOn: 700,
+		type: 'iframe',
+		mainClass: 'mfp-fade',
+		removalDelay: 160,
+		preloader: false,
+
+		fixedContentPos: false
+	});
+
+  
+	$('.image-popup-vertical-fit').magnificPopup({
+		type: 'image',
+		closeOnContentClick: true,
+		mainClass: 'mfp-img-mobile',
+		image: {
+			verticalFit: true
+		}
+		
+	});
+
+	$('.image-popup-fit-width').magnificPopup({
+		type: 'image',
+		closeOnContentClick: true,
+		image: {
+			verticalFit: false
+		}
+	});
+
+	$('.image-popup-no-margins').magnificPopup({
+		type: 'image',
+		closeOnContentClick: true,
+		closeBtnInside: false,
+		fixedContentPos: true,
+		mainClass: 'mfp-no-margins mfp-with-zoom', // class to remove default margin from left and right side
+		image: {
+			verticalFit: true
+		},
+		zoom: {
+			enabled: true,
+			duration: 300 // don't foget to change the duration also in CSS
 		}
 	});
 

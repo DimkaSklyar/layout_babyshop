@@ -8154,8 +8154,8 @@ body {
 
 .navigation__link {
   font-family: 'Nunito', sans-serif;
-  font-weight: 700;
-  color: #000;
+  font-weight: 900;
+  color: #1f3d70;
 }
 
 .navigation__link:hover {
@@ -8864,6 +8864,114 @@ body {
   margin-top: 40px;
 }
 
+.name-page {
+  padding: 100px 0;
+  text-align: center;
+}
+
+.name-page h1 {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 900;
+  color: #1f3d70;
+  text-align: center;
+  font-size: 60px;
+}
+
+.address {
+  padding: 60px 0;
+}
+
+@media (max-width: 767px) {
+  .address {
+    padding: 60px 0 30px;
+  }
+}
+
+.address__item {
+  padding-bottom: 15px;
+}
+
+.address__icon {
+  float: left;
+  padding-right: 30px;
+}
+
+@media (max-width: 767px) {
+  .address__icon {
+    width: 12%;
+    padding-bottom: 6px;
+  }
+}
+
+.address__info {
+  line-height: 1.2;
+}
+
+.address__info h2 {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  color: #1f3d70;
+  font-size: 18px;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 900;
+}
+
+.address__info a {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 900;
+  color: #b2b2b2;
+}
+
+@media (max-width: 991px) {
+  .address__info a {
+    font-size: 14px;
+  }
+}
+
+.btn_rect {
+  cursor: pointer;
+}
+
+.form .input__wrap {
+  margin-bottom: 20px;
+}
+
+.form__label {
+  display: block;
+  width: 100%;
+  color: #949494;
+  margin-bottom: 8px;
+  line-height: 16px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.form__input {
+  width: 100%;
+}
+
+@media (max-width: 767px) {
+  .form__input {
+    width: 100%;
+  }
+}
+
+.form__textarea {
+  width: 100%;
+}
+
+.form__input, .form__textarea {
+  padding: 10px 10px 10px 23px;
+  font-weight: 900;
+  font-family: Nunito,sans-serif;
+  border: 2px solid #e0e0e0;
+  border-radius: 3px;
+}
+
+.map {
+  padding: 100px 0;
+}
+
 /*==========  user style  ==========*/
 #small-dialog {
   background: white;
@@ -8986,6 +9094,74 @@ body {
 .my-mfp-slide-bottom.mfp-removing.mfp-bg {
   opacity: 0;
 }
+
+/* padding-bottom and top for image */
+.mfp-no-margins img.mfp-img {
+  padding: 0;
+}
+
+/* position of shadow behind the image */
+.mfp-no-margins .mfp-figure:after {
+  top: 0;
+  bottom: 0;
+}
+
+/* padding for main container */
+.mfp-no-margins .mfp-container {
+  padding: 0;
+}
+
+/* 
+
+for zoom animation 
+uncomment this part if you haven't added this code anywhere else
+
+*/
+.mfp-with-zoom .mfp-container,
+.mfp-with-zoom.mfp-bg {
+  opacity: 0;
+  -webkit-backface-visibility: hidden;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out; }
+
+.mfp-with-zoom.mfp-ready .mfp-container {
+  opacity: 1; }
+
+.mfp-with-zoom.mfp-ready.mfp-bg {
+  opacity: 0.8; }
+
+.mfp-with-zoom.mfp-removing .mfp-container,
+.mfp-with-zoom.mfp-removing.mfp-bg {
+  opacity: 0; }
+
+/**
+ * Simple fade transition,
+ */
+.mfp-fade.mfp-bg {
+  opacity: 0;
+  -webkit-transition: all 0.15s ease-out;
+  -moz-transition: all 0.15s ease-out;
+  transition: all 0.15s ease-out; }
+
+.mfp-fade.mfp-bg.mfp-ready {
+  opacity: 0.8; }
+
+.mfp-fade.mfp-bg.mfp-removing {
+  opacity: 0; }
+
+.mfp-fade.mfp-wrap .mfp-content {
+  opacity: 0;
+  -webkit-transition: all 0.15s ease-out;
+  -moz-transition: all 0.15s ease-out;
+  transition: all 0.15s ease-out; }
+
+.mfp-fade.mfp-wrap.mfp-ready .mfp-content {
+  opacity: 1; }
+
+.mfp-fade.mfp-wrap.mfp-removing .mfp-content {
+  opacity: 0; }
 
 /*==========  Desktop First  ==========*/
 /*==========  Mobile First  ==========*/
