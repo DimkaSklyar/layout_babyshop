@@ -563,11 +563,9 @@ body
 		z-index: 99
 
 .slick-dots li button:before
-	+media-breakpoint-down(lg)
 		font-size: 20px
 		color: #fc1550
 .slick-dots li.slick-active button:before
-	+media-breakpoint-down(lg)
 		color: #fc1550
 
 #small-dialog
@@ -695,6 +693,28 @@ body
 
 
 //about-page
+.opening-speech_other
+	font-family: 'Nunito', sans-serif
+	font-weight: 900
+	color: #1f3d70
+	font-size: 32px
+	line-height: 1.2
+	+media-breakpoint-down(lg)
+		font-size: 24px
+.underline-decor_other
+	position: relative
+	color: #1f3d70
+	font-size: 18px
+	&:before
+		content: ''
+		z-index: -1
+		width: 104%
+		height: 50%
+		background: #fc799a
+		position: absolute
+		bottom: 0
+		left: -2%
+
 
 .about-us
 	padding: 100px 0
@@ -862,6 +882,24 @@ body
 		color: #949494
 		font-size: 20px
 		font-weight: 200
+
+.delivery
+	padding: 100px 0
+	&_p
+		font-size: 16px
+		font-family: 'Nunito', sans-serif
+		font-weight: bold
+		color: #545454
+	&_img_wrap
+		width: 150px
+		padding: 0 0 15px 0
+	&_pay
+		margin-right: 30px
+		height: 80px
+		img
+			height: 100%
+			width: 100%
+			object-fit: contain
 /*==========  user style  ==========*/
 @import "main.scss"
 @import "media" // Always at the end
