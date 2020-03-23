@@ -86,9 +86,14 @@
           <div class="drop-down col-lg-4 col-6">
             <p class="sort" id="sort">Сортировка <i class="fa fa-angle-down" aria-hidden="true"></i></p>
             <div class="drop-down__menu">
-              <button type="button" class="control mixitup-control-active" data-sort="order:asc">По возрастанию</button>
+              <button type="button" class="control mixitup-control" data-sort="order:asc">По возрастанию</button>
               <button type="button" class="control mixitup-control" data-sort="order:desc">По убыванию</button>
             </div>
+            <select name="sorting" id="sorting" class="select-sort d-none">
+              <option value="order:default" class="default-sort-trigger">По умолчанию</option>
+              <option value="order:asc">Цена: по возростанию</option>
+              <option value="order:desc">Цена: по убыванию</option>
+            </select>
           </div>
           <div class="col-lg-4 col-6 filters__items">
             <p class="sort" id="filter"><i class="fa fa-plus" aria-hidden="true"></i> Фильтр </p>

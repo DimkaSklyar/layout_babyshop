@@ -9377,6 +9377,10 @@ body {
   display: none;
 }
 
+.nav-products .mixitup-control-active {
+  color: #fc1550 !important;
+}
+
 .btn_filter {
   background-color: #edefe8;
   border: 2px solid #e1e5d9;
