@@ -38,8 +38,6 @@ $('#retalForm').submit(function (e) {
   AjaxFormRequest('messegeResult-order', 'retalForm', '../order.php');
 });
 
-
-
 $("a[href='#small-dialog']").click(function () {
   $("#price").text($(this).closest(".product__item").find(".product__price").text());
   $("#product-img").attr("src", $(this).closest(".product__item").find("img").attr("src"));
@@ -50,6 +48,22 @@ $("a[href='#small-dialog']").click(function () {
 
 
 $(document).ready(function () {
+
+  $("#sort").click(function (e) { 
+    e.preventDefault();
+    $(".drop-down__menu").fadeToggle();
+  });
+
+  $(".drop-down__menu .control").click(function (e) { 
+    e.preventDefault();
+    $(".drop-down__menu").fadeToggle();
+  });
+
+  $("#filter").click(function (e) { 
+    e.preventDefault();
+    $(".drop-down__filter_wrap").fadeToggle();
+  });
+
 
   $('.popup-with-form').magnificPopup({
 		type: 'inline',
@@ -273,16 +287,6 @@ $(document).ready(function () {
       'seconds': seconds
     };
   }
-
-  var mixer = mixitup('.products-hot',{
-    "animation": {
-        "duration": 607,
-        "nudge": false,
-        "reverseOut": false,
-        "effects": "fade rotateY(94deg) stagger(30ms)"
-    }
-});
-
 
 
 });

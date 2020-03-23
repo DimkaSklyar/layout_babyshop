@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Nunito:300,400,700,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <title>Будни малышей - Каталог</title>
+</head>
+
+<body>
+
+  <header class="page-header">
+    <div class="container">
+      <div class="row align-items-lg-center">
+        <div class="col-xl-3 col-4 d-sm-block d-none">
+          <div class="social">
+            <ul class="social__list list_line">
+              <li class="social__item"><a href="https://vk.com/" class="social__link"><i class="fa fa-vk"
+                    aria-hidden="true"></i></a>
+              </li>
+              <li class="social__item"><a href="https://www.instagram.com/" class="social__link"><i
+                    class="fa fa-instagram" aria-hidden="true"></i></a></li>
+              <li class="social__item"><a href="https://www.facebook.com/" class="social__link"><i
+                    class="fa fa-facebook" aria-hidden="true"></i></a></li>
+              <li class="social__item d-md-block d-none"><a href="https://twitter.com/" class="social__link"><i
+                    class="fa fa-twitter" aria-hidden="true"></i></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-xl-6 col-4">
+          <div class="top-nav">
+            <div class="logo">
+              <a href="index.html">Будни <br>
+                Малышей</a>
+            </div>
+            <nav class="navigation__wrapper">
+              <h2 class="header-menu d-xl-none d-block">Меню</h1>
+                <ul class="navigation d-flex justify-content-center top-navigation">
+                  <li class="navigation__item top-navigation__item"><a href="index.html"
+                      class="navigation__link top-navigation__link">Главная</a></li>
+                  <li class="navigation__item top-navigation__item"><a href="catalog.html"
+                      class="navigation__link top-navigation__link">Каталог</a></li>
+                  <li class="navigation__item top-navigation__item"><a href="about.html"
+                      class="navigation__link top-navigation__link">О нас</a></li>
+                  <li class="navigation__item top-navigation__item"><a href="delivery-pay.html"
+                      class="navigation__link top-navigation__link">Доставка и оплата</a>
+                  </li>
+                  <li class="navigation__item top-navigation__item"><a href="contacts.html"
+                      class="navigation__link top-navigation__link">Контакты</a></li>
+                </ul>
+            </nav>
+            <div class="background_shadow"></div>
+          </div>
+        </div>
+        <div class="col-xl-2 offset-xl-1 col-sm-4 col-8 d-xl-block d-flex align-items-center">
+          <div class="d-xl-none d-block ml-auto"><button class="mobile-menu__button"><i class="fa fa-bars"
+                aria-hidden="true"></i></button></div>
+          <div class="top-contacts">
+            <ul class="d-flex d-lg-block">
+              <li><a href="tel:+71111234567"><i class="fa fa-phone" aria-hidden="true"></i> +7 (111)
+                  123-45-67</a></li>
+              <li><a href="email:info@mail.ru"><i class="fa fa-envelope-o" aria-hidden="true"></i>
+                  info@mail.ru</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="name-page">
+      <h1>Каталог</h1>
+      <div class="section-decor"><img src="img/decor.png" alt=""></div>
+    </div>
+  </header>
+
+  <main class="catalog">
+    <section class="page-section section-product hot-product">
+      <div class="container">
+        <div class="filters row">
+          <div class="total-product col-4 d-none d-lg-block">
+            <p class="total-product_p"><span class="hot">42 товара</span> доступно</p>
+          </div>
+          <div class="drop-down col-lg-4 col-6">
+            <p class="sort" id="sort">Сортировка <i class="fa fa-angle-down" aria-hidden="true"></i></p>
+            <div class="drop-down__menu">
+              <button type="button" class="control mixitup-control-active" data-sort="order:asc">По возрастанию</button>
+              <button type="button" class="control mixitup-control" data-sort="order:desc">По убыванию</button>
+            </div>
+          </div>
+          <div class="col-lg-4 col-6 filters__items">
+            <p class="sort" id="filter"><i class="fa fa-plus" aria-hidden="true"></i> Фильтр </p>
+          </div>
+        </div>
+        <div class="drop-down__filter_wrap">
+          <div class="drop-down__filter row">
+            <button type="button" class="control btn btn_filter col-2" data-filter="all">Все</button>
+            <button type="button" class="control btn btn_filter col-2" data-toggle=".green">Игрушки</button>
+            <button type="button" class="control btn btn_filter col-2" data-toggle=".blue">Одежда</button>
+            <button type="button" class="control btn btn_filter col-2" data-toggle=".blue-2">Обувь</button>
+            <button type="button" class="control btn btn_filter col-2" data-toggle=".pink">Акксесуары</button>
+          </div>
+        </div>
+        <div class="row products-hot" id="menu-shop">
+          <div class="product__item col-lg-4 col-6 mix mix-hit mix-sale">
+            <div class="product__item_img">
+              <a href="#small-dialog" class="popup-with-form">
+                <img src="img/products/product-1.png" alt="">
+              </a>
+              <div class="product__item_show">
+                <a href="#small-dialog" class="popup-with-form">
+                  <i class="fa fa-search-plus" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+            <p class="product__item_description d-none">>Веселые детские рюкзачки не оставят равнодушным ни одного
+              ребенка. Пестрые расцветки, дизайн в виде запоминающихся персонажей, экологически-чистые, безвредные для
+              ребенка, материалы и удобные кармашки делают рюкзачок отличным подарком для любого малыша.</p>
+            <a href="#small-dialog" class="popup-with-form">
+              <h2 class="product__title">Рюкзак кенгуру</h2>
+            </a>
+            <span class="product__price">1499 руб.</span>
+          </div>
+          <div class="product__item col-lg-4 col-6 mix mix-sale mix-hit">
+            <div class="product__item_img">
+              <a href="#small-dialog" class="popup-with-form">
+                <img src="img/products/product-2.png" alt="">
+              </a>
+              <div class="product__item_show">
+                <a href="#small-dialog" class="popup-with-form">
+                  <i class="fa fa-search-plus" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+            <p class="product__item_description d-none">Брюки с ярким рисунком изготовлены из дышащего материала. Хорошо
+              тянутся, обеспечивая удобство при носке.</p>
+            <a href="#small-dialog" class="popup-with-form">
+              <h2 class="product__title">Брюки с рисунком</h2>
+            </a>
+            <span class="product__price">499 руб.</span>
+          </div>
+          <div class="product__item col-lg-4 col-6 mix mix-sale mix-trend">
+            <div class="product__item_img">
+              <a href="#small-dialog" class="popup-with-form">
+                <img src="img/products/product-3.png" alt="">
+              </a>
+              <div class="product__item_show">
+                <a href="#small-dialog" class="popup-with-form">
+                  <i class="fa fa-search-plus" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+            <p class="product__item_description d-none">Деревянные шахматы - это классическая игра, в которую можно
+              играть двум друзьям. В игровой набор входит стандартная шахматная доска и фигуры, которые изготовлены из
+              дерева</p>
+
+            <a href="#small-dialog" class="popup-with-form">
+              <h2 class="product__title">Деревянные шахматы</h2>
+            </a>
+            <span class="product__price">1899 руб.</span>
+          </div>
+          <div class="product__item col-lg-4 col-6 mix mix-trend">
+            <div class="product__item_img">
+              <a href="#small-dialog" class="popup-with-form">
+                <img src="img/products/product-4.png" alt="">
+              </a>
+              <div class="product__item_show">
+                <a href="#small-dialog" class="popup-with-form">
+                  <i class="fa fa-search-plus" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+            <p class="product__item_description d-none">Очень красивые шерстяные тапочки в виде панды. Добавьте уюта и
+              веселья Вашему дому, подарите ребёнку Мини тапочки! </p>
+            <a href="#small-dialog" class="popup-with-form">
+              <h2 class="product__title">Мини тапочки</h2>
+            </a>
+            <span class="product__price">399 руб.</span>
+          </div>
+          <div class="product__item col-lg-4 col-6 mix mix-hit mix-trend">
+            <div class="product__item_img">
+              <a href="#small-dialog" class="popup-with-form">
+                <img src="img/products/product-5.jpg" alt="">
+              </a>
+              <div class="product__item_show">
+                <a href="#small-dialog" class="popup-with-form">
+                  <i class="fa fa-search-plus" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+            <p class="product__item_description d-none">Шапка жаккардовой вязки из мягкой пряжи. Помпон из
+              искусственного меха сверху, отвернутый нижний край с маленькой аппликацией.</p>
+            <a href="#small-dialog" class="popup-with-form">
+              <h2 class="product__title">Шляпа в горошек</h2>
+            </a>
+            <span class="product__price">899 руб.</span>
+          </div>
+          <div class="product__item col-lg-4 col-6 mix mix-sale">
+            <div class="product__item_img">
+              <a href="#small-dialog" class="popup-with-form">
+                <img src="img/products/product-6.jpg" alt="">
+              </a>
+              <div class="product__item_show">
+                <a href="#small-dialog" class="popup-with-form">
+                  <i class="fa fa-search-plus" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+            <p class="product__item_description d-none">Плюшевая игрушка в виде семечки от компании Fisher-Price - это
+              милая мягкая семечка нежно голубого цвета сделаная из высококачественных материалов.</p>
+            <a href="#small-dialog" class="popup-with-form">
+              <h2 class="product__title">Игрушка семечка</h2>
+            </a>
+            <span class="product__price">999 руб.</span>
+          </div>
+          <div class="product__item col-lg-4 col-6 mix mix-trend">
+            <div class="product__item_img">
+              <a href="#small-dialog" class="popup-with-form">
+                <img src="img/products/product-7.jpg" alt="">
+              </a>
+              <div class="product__item_show">
+                <a href="#small-dialog" class="popup-with-form">
+                  <i class="fa fa-search-plus" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+            <p class="product__item_description d-none">Кроссовки выполнены из натуральной кожи и искусственной кожи и
+              текстиля. Детали: вышитый бренд на языке и пятке, легкая межподошва EVA, застежка на шнуровке, стелька и
+              внутренний материал из текстиля. резиновая подошва.</p>
+            <a href="#small-dialog" class="popup-with-form">
+              <h2 class="product__title">Разноцветные кроссовки</h2>
+            </a>
+            <span class="product__price">3499 руб.</span>
+          </div>
+          <div class="product__item col-lg-4 col-6 mix mix-hit mix-sale">
+            <div class="product__item_img">
+              <a href="#small-dialog" class="popup-with-form">
+                <img src="img/products/product-8.jpg" alt="">
+              </a>
+              <div class="product__item_show">
+                <a href="#small-dialog" class="popup-with-form">
+                  <i class="fa fa-search-plus" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+            <p class="product__item_description d-none">Деревянные кубики для самых маленьких размером 4x4x4 см.</p>
+            <a href="#small-dialog" class="popup-with-form">
+              <h2 class="product__title">Деревянные кубики</h2>
+            </a>
+            <span class="product__price">1499 руб.</span>
+          </div>
+          <div class="product__item col-lg-4 col-6 mix mix-hit mix-sale">
+            <div class="product__item_img">
+              <a href="#small-dialog" class="popup-with-form">
+                <img src="img/products/product-8.jpg" alt="">
+              </a>
+              <div class="product__item_show">
+                <a href="#small-dialog" class="popup-with-form">
+                  <i class="fa fa-search-plus" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+            <p class="product__item_description d-none">Деревянные кубики для самых маленьких размером 4x4x4 см.</p>
+            <a href="#small-dialog" class="popup-with-form">
+              <h2 class="product__title">Деревянные кубики</h2>
+            </a>
+            <span class="product__price">1499 руб.</span>
+          </div>
+        </div>
+        <div class="mixitup-page-list"></div>
+      </div>
+      <div class="cloud">
+        <img src="img/cloud.png" class="img-fluid" alt="">
+      </div>
+    </section>
+  </main>
+
+  <footer class="page-footer">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12">
+          <div class="logo">
+            <a href="#">Будни <br>
+              Малышей</a>
+          </div>
+          <div class="subscribe">
+            <form action="" class="subscribe-form" id="subscribe-form">
+              <input type="text" name="email" id="email" class="input-form" placeholder="Ваш@mail.ru">
+              <button type="submit" class="btn btn_rect">Подписаться</button>
+            </form>
+            <div id="messegeResult-subscribe"></div>
+          </div>
+          <nav>
+            <ul class="navigation d-flex justify-content-center">
+              <li class="navigation__item"><a href="index.html" class="navigation__link">Главная</a></li>
+              <li class="navigation__item"><a href="catalog.html" class="navigation__link">Каталог</a></li>
+              <li class="navigation__item"><a href="about.html" class="navigation__link">О нас</a></li>
+              <li class="navigation__item"><a href="delivery-pay.html" class="navigation__link">Доставка и оплата</a>
+              </li>
+              <li class="navigation__item"><a href="contacts.html" class="navigation__link">Контакты</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>©2020 Будни малышей. Все права защищены.</p>
+    </div>
+  </footer>
+
+
+  <div id="small-dialog" class="zoom-anim-dialog mfp-hide">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="small-dialog__img">
+            <img src="img/product/product-1" alt="" id="product-img">
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="small-dialog-text__wrapper">
+            <div class="small-dialog-text">
+              <h2 id="product-name">Заголовок</h2>
+              <p><span class="price" id="price"></span></p>
+              <div class="product__quantity" id="description"></div>
+            </div>
+            <form action="" id="retalForm">
+              <input class="input-form" type="text" name="inputName" id="inputName" placeholder="ФИО" required>
+              <input type="text" name="inputTel" id="inputTel" placeholder="Телефон" required>
+            </form>
+            <div id="messegeResult-order">
+              <button id="submitButton" type="submit" form="retalForm" class="btn btn_rect">Заказать</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/scripts.min.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/mixitup.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/jquery.mixitup.pagination.min.js"></script>
+  <script src="js/mixitup.js"></script>
+  <script src="js/common.js"></script>
+</body>
+
+</html>

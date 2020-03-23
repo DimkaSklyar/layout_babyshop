@@ -857,7 +857,7 @@ body
 .comments
 	background: url('../img/about-v1-statistical-bg.jpg')
 	background-size: cover
-	padding: 100px 0
+	padding: 100px 0 0
 	margin-bottom: 50px
 	&__item
 		text-align: center
@@ -900,6 +900,102 @@ body
 			height: 100%
 			width: 100%
 			object-fit: contain
+
+
+.catalog
+	.total-product_p,
+	.sort
+		font-family: 'Nunito', sans-serif
+		font-weight: bold
+		color: #868686
+		font-weight: 900
+		font-size: 28px
+		.hot
+			color: $accent-2
+	.sort
+		cursor: pointer
+		transition: .3s
+		&:hover
+			color: $accent-2
+	.drop-down__menu
+		display: none
+		position: absolute
+		z-index: 99
+		background-color: #fff
+		padding: 20px 25px 10px
+		border: 1px solid $accent-2
+		border-radius: 5px
+
+		.control
+			display: block
+			background: none
+			border: none
+			outline: none 0
+			cursor: pointer
+			transition: .3s
+			font-weight: bold
+			color: #868686
+			margin-bottom: 10px
+			font-size: 18px
+			padding: 0
+			&:hover
+				color: $accent-2
+		.mixitup-control-active
+			color: $accent-2 !important
+	.filters__items
+		width: 100%
+		text-align: right
+		.sort
+			text-align: right
+			display: inline-block
+	.drop-down__filter
+		justify-content: space-around
+		padding: 5px 0 35px
+.drop-down__filter_wrap
+	display: none
+
+.btn_filter
+	background-color: $accent
+	border: 2px solid darken($accent,5)
+	color: #868686
+	cursor: pointer
+	transition: .3s
+	&:hover
+		background-color: $accent-2
+		color: #fff !important
+	&:focus
+		outline: none 0
+.mixitup-control-active
+	background-color: $accent-2
+	color: #fff !important
+	border: 2px solid $accent-2
+
+.mixitup-page-list
+	text-align: center
+.mixitup-control
+	display: inline-block
+	padding: 10px 20px
+	background-color: transparent
+	color: $accent-2
+	outline: none 0
+	border: 1px solid $accent-2
+	border-radius: 30px 
+	font-weight: 900
+	border-radius: 5px
+	background-color: $accent-2
+	color: #fff
+	cursor: pointer
+	transition: .3s
+	&:hover
+		background-color: #1f3d70
+		color: #fff
+		border-color: #1f3d70
+.mixitup-control-disabled
+	background-color: #1f3d70
+	border: 1px solid #1f3d70
+	&:hover
+		background-color: $accent-2
+		border: 1px solid $accent-2
 /*==========  user style  ==========*/
 @import "main.scss"
 @import "media" // Always at the end
