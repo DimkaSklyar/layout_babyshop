@@ -45,7 +45,10 @@ $("a[href='#small-dialog']").click(function () {
   $("#description").html($(this).closest(".product__item").find(".product__item_description").html())
   $("#inputCar").val($("#product-name").text());
 });
-
+$("a[href='#trigger']").click(function (e) { 
+  e.preventDefault();
+  $(".trigger").trigger('click');
+});
 
 $(document).ready(function () {
 

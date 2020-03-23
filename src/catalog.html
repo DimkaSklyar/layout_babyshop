@@ -71,7 +71,7 @@
       </div>
     </div>
     <div class="name-page">
-      <h1>Каталог</h1>
+      <h1>Каталог товаров</h1>
       <div class="section-decor"><img src="img/decor.png" alt=""></div>
     </div>
   </header>
@@ -81,7 +81,7 @@
       <div class="container">
         <div class="filters row">
           <div class="total-product col-4 d-none d-lg-block">
-            <p class="total-product_p"><span class="hot">42 товара</span> доступно</p>
+            <p class="total-product_p"><span class="hot">22 товара</span> доступно</p>
           </div>
           <div class="drop-down col-lg-4 col-6">
             <p class="sort" id="sort">Сортировка <i class="fa fa-angle-down" aria-hidden="true"></i></p>
@@ -97,14 +97,14 @@
         <div class="drop-down__filter_wrap">
           <div class="drop-down__filter row">
             <button type="button" class="control btn btn_filter col-2" data-filter="all">Все</button>
-            <button type="button" class="control btn btn_filter col-2" data-toggle=".green">Игрушки</button>
-            <button type="button" class="control btn btn_filter col-2" data-toggle=".blue">Одежда</button>
-            <button type="button" class="control btn btn_filter col-2" data-toggle=".blue-2">Обувь</button>
-            <button type="button" class="control btn btn_filter col-2" data-toggle=".pink">Акксесуары</button>
+            <button type="button" class="control btn btn_filter col-2" data-toggle=".toys">Игрушки</button>
+            <button type="button" class="control btn btn_filter col-2" data-toggle=".clothes">Одежда</button>
+            <button type="button" class="control btn btn_filter col-2" data-toggle=".shoes">Обувь</button>
+            <button type="button" class="control btn btn_filter col-2" data-toggle=".accessories">Акксесуары</button>
           </div>
         </div>
         <div class="row products-hot" id="menu-shop">
-          <div class="product__item col-lg-4 col-6 mix mix-hit mix-sale">
+          <div class="product__item col-lg-4 col-6 mix accessories" data-order="1499">
             <div class="product__item_img">
               <a href="#small-dialog" class="popup-with-form">
                 <img src="img/products/product-1.png" alt="">
@@ -115,7 +115,7 @@
                 </a>
               </div>
             </div>
-            <p class="product__item_description d-none">>Веселые детские рюкзачки не оставят равнодушным ни одного
+            <p class="product__item_description d-none">Веселые детские рюкзачки не оставят равнодушным ни одного
               ребенка. Пестрые расцветки, дизайн в виде запоминающихся персонажей, экологически-чистые, безвредные для
               ребенка, материалы и удобные кармашки делают рюкзачок отличным подарком для любого малыша.</p>
             <a href="#small-dialog" class="popup-with-form">
@@ -123,7 +123,7 @@
             </a>
             <span class="product__price">1499 руб.</span>
           </div>
-          <div class="product__item col-lg-4 col-6 mix mix-sale mix-hit">
+          <div class="product__item col-lg-4 col-6 mix clothes" data-order="499">
             <div class="product__item_img">
               <a href="#small-dialog" class="popup-with-form">
                 <img src="img/products/product-2.png" alt="">
@@ -141,7 +141,7 @@
             </a>
             <span class="product__price">499 руб.</span>
           </div>
-          <div class="product__item col-lg-4 col-6 mix mix-sale mix-trend">
+          <div class="product__item col-lg-4 col-6 mix toys" data-order="1899">
             <div class="product__item_img">
               <a href="#small-dialog" class="popup-with-form">
                 <img src="img/products/product-3.png" alt="">
@@ -161,7 +161,7 @@
             </a>
             <span class="product__price">1899 руб.</span>
           </div>
-          <div class="product__item col-lg-4 col-6 mix mix-trend">
+          <div class="product__item col-lg-4 col-6 mix clothes accessories" data-order="399">
             <div class="product__item_img">
               <a href="#small-dialog" class="popup-with-form">
                 <img src="img/products/product-4.png" alt="">
@@ -179,7 +179,7 @@
             </a>
             <span class="product__price">399 руб.</span>
           </div>
-          <div class="product__item col-lg-4 col-6 mix mix-hit mix-trend">
+          <div class="product__item col-lg-4 col-6 mix clothes accessories" data-order="899">
             <div class="product__item_img">
               <a href="#small-dialog" class="popup-with-form">
                 <img src="img/products/product-5.jpg" alt="">
@@ -197,7 +197,7 @@
             </a>
             <span class="product__price">899 руб.</span>
           </div>
-          <div class="product__item col-lg-4 col-6 mix mix-sale">
+          <div class="product__item col-lg-4 col-6 mix toys" data-order="999">
             <div class="product__item_img">
               <a href="#small-dialog" class="popup-with-form">
                 <img src="img/products/product-6.jpg" alt="">
@@ -215,7 +215,7 @@
             </a>
             <span class="product__price">999 руб.</span>
           </div>
-          <div class="product__item col-lg-4 col-6 mix mix-trend">
+          <div class="product__item col-lg-4 col-6 mix clothes shoes" data-order="3499">
             <div class="product__item_img">
               <a href="#small-dialog" class="popup-with-form">
                 <img src="img/products/product-7.jpg" alt="">
@@ -234,7 +234,7 @@
             </a>
             <span class="product__price">3499 руб.</span>
           </div>
-          <div class="product__item col-lg-4 col-6 mix mix-hit mix-sale">
+          <div class="product__item col-lg-4 col-6 mix toys" data-order="1499">
             <div class="product__item_img">
               <a href="#small-dialog" class="popup-with-form">
                 <img src="img/products/product-8.jpg" alt="">
@@ -251,10 +251,10 @@
             </a>
             <span class="product__price">1499 руб.</span>
           </div>
-          <div class="product__item col-lg-4 col-6 mix mix-hit mix-sale">
+          <div class="product__item col-lg-4 col-6 mix toys" data-order="1499">
             <div class="product__item_img">
               <a href="#small-dialog" class="popup-with-form">
-                <img src="img/products/product-8.jpg" alt="">
+                <img src="img/products/s1200.jfif" alt="">
               </a>
               <div class="product__item_show">
                 <a href="#small-dialog" class="popup-with-form">
@@ -262,11 +262,238 @@
                 </a>
               </div>
             </div>
-            <p class="product__item_description d-none">Деревянные кубики для самых маленьких размером 4x4x4 см.</p>
+            <p class="product__item_description d-none">Современные игрушки позволяют развивать ребенка едва ли не с
+              первых дней жизни. Они тщательно продуманы и разработаны специально для того, чтобы малыш с их помощью
+              каждый день познавал мир и открывал в себе новые возможности..</p>
             <a href="#small-dialog" class="popup-with-form">
-              <h2 class="product__title">Деревянные кубики</h2>
+              <h2 class="product__title">Игрушка львёнок</h2>
             </a>
-            <span class="product__price">1499 руб.</span>
+            <span class="product__price">2499 руб.</span>
+          </div>
+          <div class="product__item col-lg-4 col-6 mix clothes" data-order="990">
+            <div class="product__item_img">
+              <a href="#small-dialog" class="popup-with-form">
+                <img src="img/products/princes.jfif" alt="">
+              </a>
+              <div class="product__item_show">
+                <a href="#small-dialog" class="popup-with-form">
+                  <i class="fa fa-search-plus" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+            <p class="product__item_description d-none">Принцесса костюм детский Бель 5 - 6 лет выполнено из атласной
+              ткани так же используется органза .Сзади регулируется по размеру легкое и красовое переливается разными
+              нежными цветами радуги .производство Россия.</p>
+            <a href="#small-dialog" class="popup-with-form">
+              <h2 class="product__title">Костюм Принцесса</h2>
+            </a>
+            <span class="product__price">990 руб.</span>
+          </div>
+          <div class="product__item col-lg-4 col-6 mix shoes" data-order="2243">
+            <div class="product__item_img">
+              <a href="#small-dialog" class="popup-with-form">
+                <img src="img/products/product-9.jpg" alt="">
+              </a>
+              <div class="product__item_show">
+                <a href="#small-dialog" class="popup-with-form">
+                  <i class="fa fa-search-plus" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+            <p class="product__item_description d-none">Оригинальные сандалии с открытым носом из мягкого розового
+              нубука и лаковой кожи. Для ежедневной профилактики плоскостопия. Застежка на два ремешка с липучками для
+              наилучшей фиксации ножки ребенка.</p>
+            <a href="#small-dialog" class="popup-with-form">
+              <h2 class="product__title">Сандалии детские Tapiboo</h2>
+            </a>
+            <span class="product__price">2243 руб.</span>
+          </div>
+          <div class="product__item col-lg-4 col-6 mix shoes" data-order="2993">
+            <div class="product__item_img">
+              <a href="#small-dialog" class="popup-with-form">
+                <img src="img/products/product-10.jpg" alt="">
+              </a>
+              <div class="product__item_show">
+                <a href="#small-dialog" class="popup-with-form">
+                  <i class="fa fa-search-plus" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+            <p class="product__item_description d-none">Ботинки утепленные. Многослойная, анатомическая стелька для правильного формирования стопы. Жесткий фиксирующий задник с удлиненным крылом надежно стабилизирует голеностопный сустав во время ходьбы.</p>
+            <a href="#small-dialog" class="popup-with-form">
+              <h2 class="product__title">Ботинки Детские, Tapiboo </h2>
+            </a>
+            <span class="product__price">2993 руб.</span>
+          </div>
+          <div class="product__item col-lg-4 col-6 mix shoes" data-order="2900">
+            <div class="product__item_img">
+              <a href="#small-dialog" class="popup-with-form">
+                <img src="img/products/product-11.jpg" alt="">
+              </a>
+              <div class="product__item_show">
+                <a href="#small-dialog" class="popup-with-form">
+                  <i class="fa fa-search-plus" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+            <p class="product__item_description d-none">Ботинки утепленные. Многослойная, анатомическая стелька для правильного формирования стопы. Жесткий фиксирующий задник с удлиненным крылом надежно стабилизирует голеностопный сустав во время ходьбы.</p>
+            <a href="#small-dialog" class="popup-with-form">
+              <h2 class="product__title">Ботинки Tapiboo Лилия</h2>
+            </a>
+            <span class="product__price">2900 руб.</span>
+          </div>
+          <div class="product__item col-lg-4 col-6 mix clothes" data-order="999">
+            <div class="product__item_img">
+              <a href="#small-dialog" class="popup-with-form">
+                <img src="img/products/product-12.jpg" alt="">
+              </a>
+              <div class="product__item_show">
+                <a href="#small-dialog" class="popup-with-form">
+                  <i class="fa fa-search-plus" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+            <p class="product__item_description d-none">Трикотажная пижама для девочек с длинным рукавом. Брюки имеют мягкую резинку на поясе. Пижама нежно-розового цвета украшена радужным принтом с изображениями милой кошечки Hello Kitty, единорогов и надписями.</p>
+            <a href="#small-dialog" class="popup-with-form">
+              <h2 class="product__title">Пижама детская для девочек</h2>
+            </a>
+            <span class="product__price">999 руб.</span>
+          </div>
+          <div class="product__item col-lg-4 col-6 mix clothes" data-order="8388">
+            <div class="product__item_img">
+              <a href="#small-dialog" class="popup-with-form">
+                <img src="img/products/DtQUXBMX4AA75SM.jpg_large" alt="">
+              </a>
+              <div class="product__item_show">
+                <a href="#small-dialog" class="popup-with-form">
+                  <i class="fa fa-search-plus" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+            <p class="product__item_description d-none">Теплый комплект для девочки состоит из куртки и брюк на лямках. Яркая ткань в клетку и оригинальный отворот-очки на капюшоне. Шарф и манишка из мягкого флиса уже в комплекте. Теплая подкладка из флиса в капюшоне, на воротнике и по телу куртки.</p>
+            <a href="#small-dialog" class="popup-with-form">
+              <h2 class="product__title">Костюмы Deux par Deux</h2>
+            </a>
+            <span class="product__price">8388 руб.</span>
+          </div>
+          <div class="product__item col-lg-4 col-6 mix clothes" data-order="872">
+            <div class="product__item_img">
+              <a href="#small-dialog" class="popup-with-form">
+                <img src="img/products/product-13.jpg" alt="">
+              </a>
+              <div class="product__item_show">
+                <a href="#small-dialog" class="popup-with-form">
+                  <i class="fa fa-search-plus" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+            <p class="product__item_description d-none">Платье Bossa Nova выполнено из эластичного супрема. Детали: оборки, застежка на спине на кнопку.</p>
+            <a href="#small-dialog" class="popup-with-form">
+              <h2 class="product__title">Платье Bossa Nova Майя</h2>
+            </a>
+            <span class="product__price">872 руб.</span>
+          </div>
+          <div class="product__item col-lg-4 col-6 mix accessories" data-order="1950">
+            <div class="product__item_img">
+              <a href="#small-dialog" class="popup-with-form">
+                <img src="img/products/product-14.jpg" alt="">
+              </a>
+              <div class="product__item_show">
+                <a href="#small-dialog" class="popup-with-form">
+                  <i class="fa fa-search-plus" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+            <p class="product__item_description d-none">Игровые наборы-сюрпризы LOL Jewellery Series для девочек – это невероятно красивые и полезные украшения, которые хочется надевать, менять и хвастаться перед подружками.</p>
+            <a href="#small-dialog" class="popup-with-form">
+              <h2 class="product__title">Sinco Toys Набор украшений с часами</h2>
+            </a>
+            <span class="product__price">1950 руб.</span>
+          </div>
+          <div class="product__item col-lg-4 col-6 mix accessories" data-order="246">
+            <div class="product__item_img">
+              <a href="#small-dialog" class="popup-with-form">
+                <img src="img/products/5398958-02.jpg" alt="">
+              </a>
+              <div class="product__item_show">
+                <a href="#small-dialog" class="popup-with-form">
+                  <i class="fa fa-search-plus" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+            <p class="product__item_description d-none">Набор для творчества «Украшения для волос» Eva Moda, Bondibon (Ева Мода, Бондибон), поможет ребенку самостоятельно создать неповторимые украшения для волос. Нужно подключить фантазию и комбинировать разноцветные бусы, ленты, пуговки.</p>
+            <a href="#small-dialog" class="popup-with-form">
+              <h2 class="product__title">"Украшения для волос" Eva Moda</h2>
+            </a>
+            <span class="product__price">246 руб.</span>
+          </div>
+          <div class="product__item col-lg-4 col-6 mix accessories" data-order="1900">
+            <div class="product__item_img">
+              <a href="#small-dialog" class="popup-with-form">
+                <img src="img/products/product-15.jpg" alt="">
+              </a>
+              <div class="product__item_show">
+                <a href="#small-dialog" class="popup-with-form">
+                  <i class="fa fa-search-plus" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+            <p class="product__item_description d-none">Объемный и в то же время компактный рюкзак для девочек и мальчиков будет полезным аксессуаром гардероба детей школьного и дошкольного возраста. Удобная конструкция, которая держит форму в пустом состоянии, позволяет легко вмещать и доставать нужные предметы.</p>
+            <a href="#small-dialog" class="popup-with-form">
+              <h2 class="product__title">Рюкзак Nohoo Совушка</h2>
+            </a>
+            <span class="product__price">1900 руб.</span>
+          </div>
+          <div class="product__item col-lg-4 col-6 mix accessories" data-order="1500">
+            <div class="product__item_img">
+              <a href="#small-dialog" class="popup-with-form">
+                <img src="img/products/rukzak.jfif" alt="">
+              </a>
+              <div class="product__item_show">
+                <a href="#small-dialog" class="popup-with-form">
+                  <i class="fa fa-search-plus" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+            <p class="product__item_description d-none">Объемный и в то же время компактный рюкзак для девочек и мальчиков будет полезным аксессуаром гардероба детей школьного и дошкольного возраста. Удобная конструкция, которая держит форму в пустом состоянии, позволяет легко вмещать и доставать нужные предметы.</p>
+            <a href="#small-dialog" class="popup-with-form">
+              <h2 class="product__title">Рюкзак детский Пчёлка</h2>
+            </a>
+            <span class="product__price">1500 руб.</span>
+          </div>
+          <div class="product__item col-lg-4 col-6 mix accessories" data-order="1700">
+            <div class="product__item_img">
+              <a href="#small-dialog" class="popup-with-form">
+                <img src="img/products/product-16.jpg" alt="">
+              </a>
+              <div class="product__item_show">
+                <a href="#small-dialog" class="popup-with-form">
+                  <i class="fa fa-search-plus" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+            <p class="product__item_description d-none">Детский рюкзак Nohoo "Веселый зайка" - ортопедический рюкзак для ваших малышей. Рюкзак в виде милашного зайчонка. Ортопедическое строение рюкзака способствует становления правильной осанки малыша.</p>
+            <a href="#small-dialog" class="popup-with-form">
+              <h2 class="product__title">Детский рюкзак "Веселый зайка"</h2>
+            </a>
+            <span class="product__price">1700 руб.</span>
+          </div>
+          <div class="product__item col-lg-4 col-6 mix accessories" data-order="1500">
+            <div class="product__item_img">
+              <a href="#small-dialog" class="popup-with-form">
+                <img src="img/products/rukzak-2.jfif" alt="">
+              </a>
+              <div class="product__item_show">
+                <a href="#small-dialog" class="popup-with-form">
+                  <i class="fa fa-search-plus" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+            <p class="product__item_description d-none">Объемный и в то же время компактный рюкзак для девочек и мальчиков будет полезным аксессуаром гардероба детей школьного и дошкольного возраста. Удобная конструкция, которая держит форму в пустом состоянии, позволяет легко вмещать и доставать нужные предметы.</p>
+            <a href="#small-dialog" class="popup-with-form">
+              <h2 class="product__title">Детский рюкзак "Хрюша"</h2>
+            </a>
+            <span class="product__price">1500 руб.</span>
           </div>
         </div>
         <div class="mixitup-page-list"></div>
