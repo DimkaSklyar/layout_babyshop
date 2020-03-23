@@ -8991,6 +8991,12 @@ body {
   line-height: 1.2;
 }
 
+@media (max-width: 1199px) {
+  .about-us .opening-speech {
+    font-size: 24px;
+  }
+}
+
 .about-us .underline-decor {
   position: relative;
 }
@@ -9018,15 +9024,58 @@ body {
   width: 64%;
 }
 
+@media (max-width: 1199px) {
+  .content-right {
+    width: auto;
+  }
+}
+
+@media (max-width: 1199px) {
+  .fix-margin {
+    margin-left: -15px;
+  }
+}
+
+@media (max-width: 991px) {
+  .fix-margin {
+    margin-left: 0;
+  }
+}
+
 .progress .content-right {
   margin-left: 15px;
   padding-top: 40px;
+}
+
+@media (max-width: 1199px) {
+  .progress .content-right {
+    padding-top: 0;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 991px) {
+  .progress .content-right {
+    margin-top: 40px;
+  }
 }
 
 .progress__item {
   line-height: 1.2;
   margin-bottom: 50px;
   padding-right: 30px;
+}
+
+@media (max-width: 991px) {
+  .progress__item {
+    text-align: center;
+  }
+}
+
+@media (max-width: 575px) {
+  .progress__item {
+    text-align: left;
+  }
 }
 
 .progress__title {
@@ -9037,11 +9086,23 @@ body {
   margin-bottom: 0;
 }
 
+@media (max-width: 1199px) {
+  .progress__title {
+    font-size: 35px;
+  }
+}
+
 .progress__subtitle {
   font-family: 'Nunito', sans-serif;
   font-weight: 900;
   color: #1f3d70;
   font-size: 22px;
+}
+
+@media (max-width: 1199px) {
+  .progress__subtitle {
+    font-size: 20px;
+  }
 }
 
 .progress__desc {
@@ -9071,6 +9132,12 @@ body {
 
 .advantage {
   padding: 100px 0;
+}
+
+@media (max-width: 991px) {
+  .advantage {
+    padding: 10px 0;
+  }
 }
 
 .advantage__items_left {
@@ -9105,6 +9172,22 @@ body {
 
 .advantage__image {
   padding-bottom: 50px;
+}
+
+@media (max-width: 1199px) {
+  .advantage__image img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 991px) {
+  .advantage__image img {
+    width: auto;
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .advantage__items_right {

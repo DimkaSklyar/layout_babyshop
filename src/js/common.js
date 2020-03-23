@@ -190,8 +190,8 @@ $(document).ready(function () {
 
 
   $('.comment-carousel').slick({
-    dots: false,
-    arrows: true,
+    dots: true,
+    arrows: false,
     infinite: true,
     speed: 300,
     slidesToShow: 1,
@@ -200,8 +200,8 @@ $(document).ready(function () {
       {
         breakpoint: 1199,
         settings: {
-          slidesToShow: 4,
-          slidesToScroll: 3,
+          slidesToShow: 1,
+          slidesToScroll: 1,
           infinite: true,
           dots: true,
           arrows: false
@@ -210,8 +210,8 @@ $(document).ready(function () {
       {
         breakpoint: 991,
         settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
+          slidesToShow: 1,
+          slidesToScroll: 1,
           infinite: true,
           dots: true,
           arrows: false
